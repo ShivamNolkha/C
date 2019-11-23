@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+int i,n;
+printf("enter any natural digit = ");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+printf("%d\n",i);
+}
+for(i=n;i>=1;i--)
+{
+printf("%d\n",i);
+}
+}
