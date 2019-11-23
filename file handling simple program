@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+FILE *fp;
+char a[300],b[300];
+printf("enter data = ");
+scanf("%s",a);
+fp=fopen("myfile.txt","w");
+fputs(a,fp);
+fclose(fp);
+fp=fopen("myfile.txt","r");
+fgets(b,300,fp);
+printf("\n data inserted = \n %s",b);
+fclose(fp);
+}
