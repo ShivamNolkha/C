@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	int a,b,i;
+	printf("Enter range from = ");
+	scanf("%d",&a);
+	printf("to = ");
+	scanf("%d",&b);
+	printf("Even numbers between %d to %d (inclusive):\n",a,b);
+	for (i = a; i <= b; i++) 
+	{
+		if(i%2 == 0) 
+		{
+		  printf("%d ", i);
+		}
+	}
+	return 0;
+}
