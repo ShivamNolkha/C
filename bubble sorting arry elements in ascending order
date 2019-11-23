@@ -1,0 +1,29 @@
+#include<stdio.h>
+main()
+{
+int a[10],n,i,j,c;
+printf("Enter Number of elements");
+scanf("%d",&n);
+printf("enter elements value = ");
+for(i=1;i<=n;i++)
+{
+scanf("%d",&a[i]);
+}
+for(j=1;j<=n;j++)
+{
+	for(i=1;i<=n-j;i++)
+	{
+		if(a[i]>a[i+1])
+		{
+		c=a[i];
+		a[i]=a[i+1];
+		a[i+1]=c;
+		}
+	}
+}
+printf("Ascending = ");
+for(i=1;i<=n;i++)
+{
+printf("%d\n",a[i]);
+}
+}
