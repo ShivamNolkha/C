@@ -1,0 +1,28 @@
+#include<stdio.h>
+struct distance
+{
+int feet;
+float inch;
+}a,b,sum;
+main()
+{
+float i;
+printf("\nEnter values for first distance");
+printf("\nFeet = ");
+scanf("%d",&a.feet);
+printf("Inches = ");
+scanf("%f",&a.inch);
+printf("\nEnter values for second distance = ");
+printf("\nFeet = ");
+scanf("%d",&b.feet);
+printf("Inches = ");
+scanf("%f",&b.inch);
+sum.feet=a.feet+b.feet;
+sum.inch=a.inch+b.inch;
+while(sum.inch>11)
+{
+sum.inch=sum.inch-12;
+sum.feet++;
+}
+printf("Total Distance is %dfeet %finches\n",sum.feet,sum.inch);
+}
