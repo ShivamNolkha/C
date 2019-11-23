@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+int a,b;
+printf("enter two no = ");
+scanf("%d%d",&a,&b);
+printf("before swap \n a=%d \n b=%d \n",a,b);
+a=a-b;
+b=a+b;
+a=b-a;
+printf("After swap \n a=%d \n b=%d ",a,b);
+}
