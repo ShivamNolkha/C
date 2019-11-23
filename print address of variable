@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+int num;
+printf("enter variable = ");
+scanf("%d",&num);
+printf("Value of variable is: %d",num);
+printf("\nAddress of variable is: %p\n",&num);
+return 0;
+}
